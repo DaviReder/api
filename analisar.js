@@ -9,7 +9,6 @@ export default async function handler(req, res) {
     return res.status(400).json({ error: "Nenhum texto enviado" });
   }
 
-  // EXEMPLO: só para testar que está funcionando
   res.status(200).json({
     recebido: texto,
     analisado: true,
